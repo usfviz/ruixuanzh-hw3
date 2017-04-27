@@ -40,7 +40,8 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Heat map", plotOutput("heatmap")), 
-        tabPanel("Scatterplot Matrix", plotOutput("matrices")),
+        tabPanel("Scatterplot Matrix", plotlyOutput("matrices")),
+        # tabPanel("Scatterplot Matrix", plotlyOutput("bubble"), value=1),
         tabPanel("Parallel Coordinates Plot", parcoordsOutput("ParaCoor"))
       )
     )

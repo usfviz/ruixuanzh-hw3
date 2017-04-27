@@ -28,7 +28,7 @@ output$heatmap <- renderPlot({
 })
 
 # Technique 2: Scatterplot Matrix -or- Small Multiples
-output$matrices <- renderPlot({
+output$matrices <- renderPlotly({
   df <- heatdf[,7:11]
   colnames(df) <- c("Reach", "Impression", "Engaged_User", "Customers","Consumptions")
   p <- ggpairs(df, 

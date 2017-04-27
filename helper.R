@@ -1,9 +1,13 @@
 library(ggplot2)
+if (!require("viridis")){install.packages("viridis")}
+if (!require("plotly")){install.packages("plotly")}
+if (!require("GGally")){install.packages("GGally")}
+library(plotly)
 library(viridis)
+library(parcoords)
 
 # you need to install package parcoords 
 # devtools::install_github("timelyportfolio/parcoords")
-library(parcoords)
 # argument for heat_map(data = heatdf, x1 = "Post.Weekday",  x2 = "Post.Hour",  interest= input$metrics,  y1 = "Category", y2 =  "Post.Month")
 
 # function to generate map 1
