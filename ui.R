@@ -5,7 +5,7 @@ library(GGally)
 
 
 # setwd("/Users/Ruixuan/Documents/01infoVisual/hw/hw3/")
-facebook <- read.csv("Facebook_metrics/dataset_Facebook.csv", sep = ";")
+facebook <- read.csv("dataset_Facebook.csv", sep = ";")
 facebook[is.na(facebook)] <- 1
 heatdf <- subset(facebook, select = -c(Type))
 
