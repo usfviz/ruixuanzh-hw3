@@ -2,6 +2,8 @@ library(shiny)
 library(ggplot2)
 library(parcoords)
 library(GGally)
+library(plotly)
+
 
 
 # setwd("/Users/Ruixuan/Documents/01infoVisual/hw/hw3/")
